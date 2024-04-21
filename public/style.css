@@ -1,0 +1,61 @@
+body{
+    background-color: rgb(79, 93, 117);
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+}
+
+#div1{
+    margin-left: 37%;
+    margin-top: 7%;
+    height: 90px;
+}
+h1{
+    color: azure;
+    margin-left: 8%;
+}
+input{
+    width: 25%;
+    height: 25px;
+    border: 1px solid white;
+    border-radius: 2px;
+}
+button{
+    width: 16%;
+    padding: 6px;
+    border: 1px solid rgb(88, 202, 219);
+    border-radius: 2px;
+    background-color: rgb(88, 202, 219);
+    font-weight: bold;
+    color: whitesmoke
+}
+
+#div2{
+    background-color:azure;
+    width: 20%;
+    height: 30%;
+    margin-left: 40%;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+#div2 h1{
+    color: black;
+    margin-top: 10%;
+    margin-left: 30%;
+    
+}
+.card{
+    margin-left: 30%;
+    margin-top: 17%;
+    font-size: large;
+}
+
+.error {
+    color: rgb(255, 0, 0);
+    font-size: 18px;
+    margin-top: 10px;
+    width: 20%;
+    height: 10%;
+    margin-left: 45%;
+  }

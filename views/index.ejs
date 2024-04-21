@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+    <!---font awsome link---->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    />
+
+   
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
+<style>
+        
+</style>
+
+</head>
+<body>
+    
+    <div id="div1">
+        <h1>Weather App</h1>
+        <form action="/weather" method="get">
+            <input type="text" name="city" id="Enter the city name">
+            <button type="submit">Get Weather</button>
+        </form>
+    </div>
+
+   
+        <% if(error) { %>
+
+        <p  class="error"><%= error %> </p>
+
+        <% }else if(weather) { %>
+
+            <div id="div2">
+
+            <div class="card">
+                <!------Add Data ------>
+                <p>
+                    <i class=""fas fa-thermometer-half""></i>
+                    <%=weather.main.temp%>&deg;C
+                </p>
+
+                <p>
+                    <i class="fas fa-cloud"></i>
+                    <%=weather.weather[0].main%>
+                </p>
+
+                <p>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <%=weather.name%>, <%=weather.sys.country%>
+                </p>
+            </div>
+        </div>
+            <% } %>
+    
+
+</body>
+</html>
